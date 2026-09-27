@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Design Tokens & Modern Reset: Stop-and-Wait Protocol Simulator
+   ========================================================================== */
+
+:root, [data-theme="light"] {
+  --bg-app: #f8fafc;
+  --bg-card: #ffffff;
+  --bg-card-sub: #f1f5f9;
+  --bg-track: #e2e8f0;
+  
+  --border-subtle: #e2e8f0;
+  --border-card: #e2e8f0;
+  --border-focus: #93c5fd;
+
+  --text-main: #0f172a;
+  --text-body: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+
+  --primary-blue: #2563eb;
+  --primary-blue-hover: #1d4ed8;
+  --primary-blue-light: #eff6ff;
+  --primary-blue-border: #bfdbfe;
+
+  --accent-emerald: #059669;
+  --accent-emerald-light: #ecfdf5;
+  --accent-emerald-border: #a7f3d0;
+
+  --accent-amber: #d97706;
+  --accent-amber-light: #fffbeb;
+  --accent-amber-border: #fde68a;
+
+  --accent-red: #dc2626;
+  --accent-red-light: #fef2f2;
+  --accent-red-border: #fecaca;
+
+  --accent-purple: #7c3aed;
+  --accent-purple-light: #f5f3ff;
+  --accent-purple-border: #ddd6fe;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] {
+  --bg-app: #0b0f19;
+  --bg-card: #111827;
+  --bg-card-sub: #1f2937;
+  --bg-track: #374151;
+
+  --border-subtle: #1f2937;
+  --border-card: #1f2937;
+  --border-focus: #3b82f6;
+
+  --text-main: #f9fafb;
+  --text-body: #e5e7eb;
+  --text-muted: #9ca3af;
+  --text-subtle: #6b7280;
+
+  --primary-blue: #3b82f6;
+  --primary-blue-hover: #2563eb;
+  --primary-blue-light: rgba(59, 130, 246, 0.15);
+  --primary-blue-border: rgba(59, 130, 246, 0.35);
+
+  --accent-emerald: #10b981;
+  --accent-emerald-light: rgba(16, 185, 129, 0.15);
+  --accent-emerald-border: rgba(16, 185, 129, 0.35);
+
+  --accent-amber: #f59e0b;
+  --accent-amber-light: rgba(245, 158, 11, 0.15);
+  --accent-amber-border: rgba(245, 158, 11, 0.35);
+
+  --accent-red: #ef4444;
+  --accent-red-light: rgba(239, 68, 68, 0.15);
+  --accent-red-border: rgba(239, 68, 68, 0.35);
+
+  --accent-purple: #a855f7;
+  --accent-purple-light: rgba(168, 85, 247, 0.15);
+  --accent-purple-border: rgba(168, 85, 247, 0.35);
+
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 12px 0 rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-body);
+  min-height: 100vh;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+button, input, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
